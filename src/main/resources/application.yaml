@@ -1,5 +1,8 @@
 # example values
 
+
+
+
 indexing-settings:
   sites:
     - url: https://www.lenta.ru
@@ -8,3 +11,18 @@ indexing-settings:
       name: Skillbox
     - url: https://www.playback.ru
       name: PlayBack.Ru
+
+server:
+port: 8080
+spring:
+datasource:
+  username: root
+  password: pp1788295
+  url: jdbc:mysql://localhost:3306/search_engine
+  jpa:
+  properties:
+    hibernate: 12
+    dialect: org.hibernate.dialect.MySQL80
+  hibernate:
+    ddl-auto: update
+    show-sql: true
